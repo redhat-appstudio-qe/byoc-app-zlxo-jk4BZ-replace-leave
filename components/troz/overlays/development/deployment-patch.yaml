@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: troz
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-xplp-tenant/byoc-app-zlxo/troz@sha256:c66f7eecc2f5d5152c08b7a0e0ae5cdf98f49a21eef87dcbbb11fbb65669d5f3
+        name: my-java-quarkus
+        resources: {}
+status: {}
