@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: troz
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-xplp-tenant/byoc-app-zlxo/troz@sha256:c66f7eecc2f5d5152c08b7a0e0ae5cdf98f49a21eef87dcbbb11fbb65669d5f3
         name: my-java-quarkus
         ports:
         - containerPort: 8081
